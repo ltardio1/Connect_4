@@ -1,0 +1,305 @@
+body {
+
+	background-image: URL('http://cdn.bloody-disgusting.com/wp-content/uploads/2015/11/119091-rick-and-morty-rick-and-morty.jpg');
+	background-size: cover;
+	background-color: #5bc0d1;
+	}
+
+
+
+#input-container {
+	text-align: center;
+	width: 60%;
+	/*height: 15%;*/
+}
+
+#input-box1 {
+	width: 8%;
+	height: 3%;
+}
+
+#input-box2 {
+	width: 8%;
+	height: 3%;
+	border: 2px solid white;
+}
+
+
+
+#player1, #player2 {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#player1 {
+	width: 10%; height: 10%; 
+	margin-right: 60px;
+	padding-right: 3em;
+}
+
+#player2 {
+	width: 10%; height: 10%; 
+}
+
+h3 {
+	color: white;
+	/*margin-top: 40px;*/
+}
+
+
+
+#container {
+	/*background-color: #5bc0d1;*/
+	height: 54%;
+	width:36%;
+	margin: 100px auto;
+	border: 10px solid white;
+	border-radius: 15px; 
+	
+	animation-name: woddy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: background-color 15s ease-in-out;
+
+}
+
+
+
+@keyframes woddy {
+    0%   {background-color:#5bc0d1;}
+    25%  {background-color:#b2d235;}
+    50%  {background-color:#5bc0d1;}
+    75%  {background-color:#b2d235;}
+    100% {background-color:#5bc0d1;}
+}
+
+
+
+
+
+
+
+.columns{
+	width: 13.2%;
+	height: 100%;
+	display: inline-block;
+	/*border-right: 2px solid black;*/
+	animation-name: birdy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: background-color 15s ease-in-out;
+
+}
+
+
+
+@keyframes birdy {
+    0%   {background-color:#5bc0d1;}
+    25%  {background-color:#b2d235;}
+    50%  {background-color:#5bc0d1;}
+    75%  {background-color:#b2d235;}
+    100% {background-color:#5bc0d1;}
+}
+
+.columns > div:hover {
+	opacity: 2;
+	background-color: #f6546a;
+	width: 5%;
+	/*height: 5%;*/
+}
+
+
+
+.columns > div {
+	height: 5%;
+	width: 31%;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 1em;
+	margin: 0 auto;
+
+}
+
+
+.morty {
+
+	background-image: url('http://i.imgur.com/6zInXBr.png');
+	background-size: cover;
+	animation-name: yo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: background-image 10s ease-in-elastic;
+}
+
+/*@keyframes yo {
+    0%   {background-image: url('http://i.imgur.com/ebnhGDt.png');}
+    25%  {background-image: url('http://i.imgur.com/6zInXBr.png');}
+    50%  {background-image: url('http://i.imgur.com/ebnhGDt.png');}
+    75%  {background-image: url('http://i.imgur.com/6zInXBr.png');}
+    100% {background-image: url('http://i.imgur.com/ebnhGDt.png');}
+}*/
+
+
+
+.rick {
+
+
+	background-image: url('http://i.imgur.com/6A4DSL3.png');
+	background-size: cover;
+	animation-name: ay;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: background-image 10s ease-in-elastic;
+
+}
+/*http://i.imgur.com/X2h7PfT.png*/
+
+/*http://i.imgur.com/6A4DSL3.png*/
+/*
+@keyframes ay {
+    0%   {background-image: url('http://i.imgur.com/X2h7PfT.png');}
+    25%  {background-image: url('http://i.imgur.com/6A4DSL3.png');}
+    50%  {background-image: url('http://i.imgur.com/X2h7PfT.png');}
+    75%  {background-image: url('http://i.imgur.com/6A4DSL3.png');}
+    100% {background-image: url('http://i.imgur.com/X2h7PfT.png');}
+}
+*/
+.fuckyea {
+	height: 400px;
+	width: 400px;
+	display: block;
+	border-radius: 50%;
+	background-image: url('http://i.imgur.com/6A4DSL3.png');
+	background-size: cover;
+	margin: 0 auto;
+	animation-name: yuo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: background-image 1s ease-in-elastic;
+    z-index: 4;
+
+}
+
+/*'http://i.imgur.com/X2h7PfT.png'*/
+
+@keyframes yuo {
+    0%   {background-image: url('http://i.imgur.com/X2h7PfT.png'); width: 400px;
+	height: 400px;} 
+    25%  {background-image: url('http://i.imgur.com/6A4DSL3.png'); width: 400px;
+	height:400px;}
+    50%  {background-image: url('http://i.imgur.com/X2h7PfT.png'); width: 400px;
+	height: 400px;}
+    75%  {background-image: url('http://i.imgur.com/6A4DSL3.png'); width: 400px;
+	height: 400px;}
+    100% {background-image: url('http://i.imgur.com/X2h7PfT.png'); width: 400px;
+	height: 400px;}
+}
+
+
+
+h2 {
+	font-size: 100%;
+	color: #5bc0d1;
+
+}
+
+.yeaman {
+		height: 400px;
+		width: 400px;
+		display: block;
+		border-radius: 50%;
+		background-image: url('http://i.imgur.com/6zInXBr.png');
+		background-size: cover;
+		margin: 0 auto;
+		animation-name: yay;
+	    animation-duration: 2s;
+	    animation-iteration-count: infinite;
+	    transition: background-image 1s ease-in-elastic;
+	    z-index: 4;
+}
+
+@keyframes yay {
+    0%   {background-image: url('http://i.imgur.com/ebnhGDt.png'); width: 400px;
+	height: 400px;} 
+    25%  {background-image: url('http://i.imgur.com/6zInXBr.png'); width: 400px;
+	height: 400px;}
+    50%  {background-image: url('http://i.imgur.com/ebnhGDt.png'); width: 400px;
+	height: 400px;}
+    75%  {background-image: url('http://i.imgur.com/6zInXBr.png'); width: 400px;
+	height: 400px;}
+    100% {background-image: url('http://i.imgur.com/ebnhGDt.png'); width: 400px;
+	height: 400px;}
+}
+
+
+
+.tieM {
+	height: 400px;
+	width: 400px;
+	display: block;
+	border-radius: 50%;
+	background-image: url('http://i.imgur.com/6zInXBr.png');
+	background-size: cover;
+	margin: 0 auto;
+	animation-name: tieM;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: background-image 1s ease-in-elastic;
+    z-index: 4;
+
+}
+
+/*'http://i.imgur.com/X2h7PfT.png'*/
+
+@keyframes tieM {
+    0%   {background-image: url('http://i.imgur.com/ebnhGDt.png'); width: 400px;
+	height: 400px;} 
+    25%  {background-image: url('http://i.imgur.com/6zInXBr.png'); width: 400px;
+	height: 400px;}
+    50%  {background-image: url('http://i.imgur.com/ebnhGDt.png'); width: 400px;
+	height: 400px;}
+    75%  {background-image: url('http://i.imgur.com/6zInXBr.png'); width: 400px;
+	height: 400px;}
+    100% {background-image: url('http://i.imgur.com/ebnhGDt.png'); width: 400px;
+	height: 400px;}
+}
+
+
+
+
+.tieR {
+	height: 7em;
+	width: 6em;
+	display: inline-block;
+	border-radius: 50%;
+	background-image: url('http://i.imgur.com/6A4DSL3.png');
+	background-size: cover;
+	margin: 0 auto;
+	animation-name: tieR;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: background-image 1s ease-in-elastic;
+    z-index: 4;
+
+}
+
+/*'http://i.imgur.com/X2h7PfT.png'*/
+
+@keyframes tieR {
+    0%   {background-image: url('http://i.imgur.com/X2h7PfT.png'); width: 400px;
+	height: 400px;} 
+    25%  {background-image: url('http://i.imgur.com/6A4DSL3.png'); width: 400px;
+	height:400px;}
+    50%  {background-image: url('http://i.imgur.com/X2h7PfT.png'); width: 400px;
+	height: 400px;}
+    75%  {background-image: url('http://i.imgur.com/6A4DSL3.png'); width: 400px;
+	height: 400px;}
+    100% {background-image: url('http://i.imgur.com/X2h7PfT.png'); width: 400px;
+	height: 400px;}
+}
+
+
+

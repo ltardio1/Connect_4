@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title>connect4</title>
+		<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="connect4.css">
+		<script type="text/javascript" src="connect4.js"></script>
+</head>
+<body>
+	
+	<!-- the area where the players type there names -->
+	<div id="input-container">	
+		<input id="input-box1" type="text"></input>
+		<button id="submit1">ADD</button>
+		<div id="player1">
+			<h3>PLAYER 1</h3>
+		</div>
+		
+		<input id="input-box2" type="text"></input>
+		<button id="submit2">ADD</button>
+		<!-- section for player 1's name -->
+		<div id="player2">
+			<h3>PLAYER 2</h3>
+		</div>
+	</div>
+
+	<!-- <div id="restart"> -->
+		<button id="restart">Restart</button>
+	<!-- </div> -->
+	<div class="yeaman"><h2>MORTY TIME!!!</h2></div>
+	<div class="fuckyea"><h2>RICK MOTHERF#$%ER!!!</h2></div>
+
+	<div class="tieM"><h2>TIE GAME????!!!</h2></div>
+	<div class="tieR"><h2>YEA WHAT IS THIS????!!!</h2></div>
+
+	<!-- contains the game board -->
+	<div id="container">
+		
+		<div id="column1" class="columns">
+			<div class="empty" data-v="1" data-h="1" data-dd="1"></div>
+			<div class="empty" data-v="1" data-h="5" data-dd="10"></div>
+			<div class="empty" data-v="1" data-h="9" data-dd="12"></div>
+			<div class="empty" data-v="1" data-h="13" data-du="12"></div>
+			<div class="empty" data-v="1" data-h="17" data-du="10"></div>
+			<div class="empty" data-v="1" data-h="21" data-du="1"></div>
+		</div>
+
+		<div id="column2" class="columns">
+			<div class="empty" data-v="2" data-h="1" data-h="2" data-dd="4"></div>
+			<div class="empty" data-v="2" data-h="5" data-h="6" data-dd="1" data-dd="2"></div>
+			<div class="empty" data-v="2" data-h="9" data-h="10" data-dd="10" data-dd="11" data-du="12"></div>
+			<div class="empty" data-v="2" data-h="13" data-h="14" data-du="10" data-du="11" data-dd="12"></div>
+			<div class="empty" data-v="2" data-h="17" data-h="18" data-du="1" data-du="2"></div>
+			<div class="empty" data-v="2" data-h="21" data-h="22" data-du="4"></div>
+		</div>
+
+		<div id="column3" class="columns">
+			<div class="empty" data-v="3" data-h="1" data-h="2" data-h="3" data-dd="7"></div>
+			<div class="empty" data-v="3" data-h="5" data-h="6" data-h="7" data-dd="4" data-dd="5" data-du="12"></div>
+			<div class="empty" data-v="3" data-h="9" data-h="10" data-h="11" data-dd="1" data-dd="2" data-dd="3" data-du="10" data-du="11"></div>
+			<div class="empty" data-v="3" data-h="13" data-h="14" data-h="15" data-du="1" data-du="2" data-du="3" data-dd="10" data-dd="11"></div>
+			<div class="empty" data-v="3" data-h="17" data-h="18" data-h="19" data-du="4" data-du="5" data-dd="12"></div>
+			<div class="empty" data-v="3" data-h="21" data-h="22" data-h="23" data-du="7"></div>
+		</div>
+
+		<div id="column4" class="columns">
+			<div class="empty" data-v="4" data-h="1" data-h="2" data-h="3" data-h="4" data-dd="9" data-du="12"></div>
+			<div class="empty" data-v="4" data-h="5" data-h="6" data-h="7" data-h="8" data-dd="7" data-dd="8" data-du="10" data-du="11"></div>
+			<div class="empty" data-v="4" data-h="9" data-h="10" data-h="11" data-h="12" data-du="1" data-du="2" data-du="3" data-dd="4" data-dd="5" data-dd="6"></div>
+			<div class="empty" data-v="4" data-h="13" data-h="14" data-h="15" data-h="16" data-du="4" data-du="5" data-du="6" data-dd="1" data-dd="2" data-dd="3"></div>
+			<div class="empty" data-v="4" data-h="17" data-h="18" data-h="19" data-h="20" data-du="7" data-du="8" data-dd="10" data-dd="11"></div>
+			<div class="empty" data-v="4" data-h="21" data-h="22" data-h="23" data-h="24" data-du="9" data-dd="12"></div>
+		</div>
+
+		<div id="column5" class="columns">
+			<div class="empty" data-v="5" data-h="2" data-h="3" data-h="4" data-du="11"></div>
+			<div class="empty" data-v="5" data-h="6" data-h="7" data-h="8" data-du="2" data-du="3" data-dd="9"></div>
+			<div class="empty" data-v="5" data-h="10" data-h="11" data-h="12" data-du="4" data-du="5" data-du="6" data-dd="7" data-dd="8"></div>
+			<div class="empty" data-v="5" data-h="14" data-h="15" data-h="16" data-du="7" data-du="8" data-dd="4" data-dd="5" data-dd="6"></div>
+			<div class="empty" data-v="5" data-h="18" data-h="19" data-h="20" data-du="9" data-dd="2" data-dd="3"></div>
+			<div class="empty" data-v="5" data-h="22" data-h="23" data-h="24" data-du="" data-dd="11"></div>
+		</div>
+
+		<div id="column6" class="columns">
+			<div class="empty" data-v="6" data-h="3" data-h="4" data-du="3"></div>
+			<div class="empty" data-v="6" data-h="7" data-h="8" data-du="5" data-du="6"></div>
+			<div class="empty" data-v="6" data-h="11" data-h="12" data-du="7" data-du="8" data-dd="9"></div>
+			<div class="empty" data-v="6" data-h="15" data-h="16" data-du="9" data-dd="7" data-dd="8"></div>
+			<div class="empty" data-v="6" data-h="19" data-h="20" data-du="" data-dd="5" data-dd="6"></div>
+			<div class="empty" data-v="6" data-h="23" data-h="24" data-du="" data-dd="3"></div>
+		</div>
+
+		<div id="column7" class="columns">
+			<div class="empty" data-v="7" data-h="4" data-du="6"></div>
+			<div class="empty" data-v="7" data-h="8" data-du="8"></div>
+			<div class="empty" data-v="7" data-h="12" data-du="9"></div>
+			<div class="empty" data-v="7" data-h="16" data-du="" data-dd="9"></div>
+			<div class="empty" data-v="7" data-h="20" data-du="" data-dd="8"></div>
+			<div class="empty" data-v="7" data-h="24" data-du="" data-dd="6"></div>
+		</div>
+
+</div>
+
+
+</body>
+</html>
